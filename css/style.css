@@ -160,6 +160,9 @@ header{
     max-width: 100px;
 }
 
+.logo img{
+    cursor: pointer;
+}
 
 .nav{
     position: fixed;
@@ -292,6 +295,7 @@ header{
         "img body";
     }
     .section__title--intro{
+        text-align: center;
         grid-area: title;
     }
     .intro__img{
@@ -308,12 +312,15 @@ header{
     }
 
     .section__subtitle--intro span{
-        margin-left: 15em;
+        margin-left: 17em;
         width: 100%;
     }
 
     .intro__body{
         grid-area: body;
+        margin: 0 auto;
+        text-align: center;
+        width: 70%;
     }
 }
 
@@ -450,7 +457,8 @@ header{
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 20rem;
     -ms-flex: 1 1 20rem;
-    flex: 1 1 20rem; 
+    flex: 1 1 20rem;
+    height: 40vh; 
 }
 .portfolio-item .portfolio-image {
     display: block;
@@ -497,10 +505,7 @@ header{
     font-size: 2.5rem;
     margin-bottom: auto; 
 }
-  
-.portfolio-desc {
-    display: none; 
-}  
+
 .portfolio-link {
     color: var(--clr-light);
     font-weight: 900;

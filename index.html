@@ -13,7 +13,9 @@
     <body>
         <header>
             <div class="logo">
-                <img src="img/image-1.png" alt="image-1">
+                <a href="#">
+                    <img src="img/image-1.png" alt="image-1">
+                </a>
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger">
@@ -22,9 +24,9 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Experience</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="index.html#footer" class="nav__link">Contact Me</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,28 +38,28 @@
             </h1>
             <p class="section__subtitle section__subtitle--intro"><span>Software Developer</span></p>
             <img src="img/profilephoto.png" alt="profilephoto" class="intro__img">
-            <p class="intro__body">Coding, History and Science - three things  </p>
+            <p class="intro__body">A guy from Rajkot, Gujarat. A graduate from DA-IICT. Huge football fan (Manchester is Red and Madrid is white!!). Astrophysics is something I'm very passionate about. A Book worm. </p>
         </section>
 
         <!--My services-->
         <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I Do?</h2>
+            <h2 class="section__title section__title--services">Experience</h2>
             <!--Services-->
             <div class="services">
                 <!--service-->
                 <div class="service">
-                    <h3>Design + Development</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum commodi molestias, nihil obcaecati animi expedita quo, tempora totam, sequi atque corporis dolores ratione temporibus illo mollitia voluptatem eos quibusdam soluta?</p>
+                    <h3>React Developer Intern</h3>
+                    <p>I am currently a React developer Intern at the Western International Group. My day to day tasks at the company include the developement of the company website, developemnt of the inventory system of the company.</p>
                 </div>
                 <!--service-->
                 <div class="service">
-                    <h3>E-Commerce</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente minus et ad suscipit. Qui quis possimus sapiente nam velit perferendis vel assumenda nemo quia sint. Ducimus neque sapiente repellendus dignissimos?</p>
+                    <h3>Python Developer Intern</h3>
+                    <p>I interned at Warlock Technologies based out of Gandhinagar during my 8th semester. I was a python developer intern. I worked on the backend where I learned and got familiar with the Django framework.</p>
                 </div>
                 <!--service-->
                 <div class="service">
-                    <h3>WordPress</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur asperiores inventore nisi ex minus maiores optio sunt nobis repellat. Earum pariatur voluptatem, odio ea ad modi dolore assumenda maxime nesciunt?</p>
+                    <h3>Research Intern</h3>
+                    <p>As a research Intern at Dhirubhai Ambani Institute of Information and Communication Technology (DA-IICT), I was involved in the research and developement of a Pedestrian Detection System.</p>
                 </div>
             </div>
         </section>
@@ -65,56 +67,63 @@
         <!--My Work-->
         <section class="my-work" id="work">
             <h2 class="section__title section__title--work">My Work</h2>
-            <p class="section__subtitle section__subtitle--work">Selection of my range of work</p>
+            <p class="section__subtitle section__subtitle--work">Developement Projects</p>
+            <div class="portfolio">
+                <div class="portfolio-items">
+
+                    <!-- Portfolio item 1 -->
+                    <figure class="portfolio-item">
+                        <img class="portfolio-image" src="img/three.jpg" alt="portfolio item">
+                        <figcaption>
+                        <h2 class="portfolio-title">Job Finder using CV Analysis</h2>
+                        <p class="portfolio-desc">A Web App to connect employers and job seekers. Companies test their metal on the test portal and declare the results on the web app itself.</p>
+                        <a href="https://github.com/kashgohil/SEN_project" class="portfolio-link" target="_blank">Github: <img src="img/white-arrow.svg" class="white-arrow-svg" alt="white arrow"></a>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Portfolio item 2 -->
+                    <figure class="portfolio-item">
+                        <img class="portfolio-image" src="img/one.jpg" alt="portfolio item">
+                        <figcaption>
+                          <h2 class="portfolio-title">Pygame Module based Games</h2>
+                          <p class="portfolio-desc">A vintage snake game and a vintage space invader game made in python for the nostalgia!!</p>
+                          <a href="https://github.com/kashgohil" class="portfolio-link" target="_blank">Github: <img src="img/white-arrow.svg" class="white-arrow-svg" alt="white arrow"> </a>
+                        </figcaption>    
+                      </figure>
+              
+                    <!-- Portfolio item 3 -->
+                    <figure class="portfolio-item">
+                        <img class="portfolio-image" src="img/two.jpg" alt="portfolio item">
+                        <figcaption>
+                        <h2 class="portfolio-title">Socket.io based Chat Apps</h2>
+                        <p class="portfolio-desc">Chat Apps based on Socket.io - one made with the flare of React, the other one is made with simplicity of HTML/CSS</p>
+                        <a href="https://github.com/kashgohil" class="portfolio-link" target="_blank">Github: <img src="img/white-arrow.svg" class="white-arrow-svg" alt="white arrow"></a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <br />
+            <br />
+            <p class="section__subtitle section__subtitle--work">Research Projects</p>
             <div class="portfolio">
                 <div class="portfolio-items">
                     <!-- Portfolio item 1 -->
                     <figure class="portfolio-item">
-                        <img class="portfolio-image" src="img/portfolio-1.jpg" alt="portfolio item">
+                        <img class="portfolio-image" src="img/four.jpg" alt="portfolio item">
                         <figcaption>
-                          <h2 class="portfolio-title">Project Name</h2>
-                          <p class="portfolio-desc">A short description could go right here</p>
-                          <a href="#" class="portfolio-link">More info <img src="img/white-arrow.svg" class="white-arrow-svg" alt="white arrow"> </a>
+                          <h2 class="portfolio-title">Pedestrian Detection System</h2>
+                          <p class="portfolio-desc">As the name suggests, it detects pedestrians!! It does it in the real time. Speed approximation is also an added feature!</p>
+                          <a href="https://github.com/kashgohil/pedestrian-detection-system" target="_blank" class="portfolio-link">Github: <img src="img/white-arrow.svg" class="white-arrow-svg" alt="white arrow"> </a>
                         </figcaption>    
                       </figure>
               
                     <!-- Portfolio item 2 -->
                     <figure class="portfolio-item">
-                        <img class="portfolio-image" src="img/portfolio-2.jpg" alt="portfolio item">
+                        <img class="portfolio-image" src="img/five.jpg" alt="portfolio item">
                         <figcaption>
-                        <h2 class="portfolio-title">Project Name</h2>
-                        <p class="portfolio-desc">A short description could go right here</p>
-                        <a href="#" class="portfolio-link">More info<img src="img/white-arrow.svg" class="white-arrow-svg" alt="white arrow"></a>
-                        </figcaption>
-                    </figure>
-              
-                    <!-- Portfolio item 3 -->
-                    <figure class="portfolio-item">
-                        <img class="portfolio-image" src="img/portfolio-3.jpg" alt="portfolio item">
-                        <figcaption>
-                        <h2 class="portfolio-title">Project Name</h2>
-                        <p class="portfolio-desc">A short description could go right here</p>
-                        <a href="#" class="portfolio-link">More info<img src="img/white-arrow.svg" class="white-arrow-svg" alt="white arrow"></a>
-                        </figcaption>
-                    </figure>
-              
-                    <!-- Portfolio item 4 -->
-                    <figure class="portfolio-item">
-                        <img class="portfolio-image" src="img/portfolio-4.jpg" alt="portfolio item">
-                        <figcaption>
-                        <h2 class="portfolio-title">Project Name</h2>
-                        <p class="portfolio-desc">A short description could go right here</p>
-                        <a href="#" class="portfolio-link">More info<img src="img/white-arrow.svg" class="white-arrow-svg" alt="white arrow"></a>
-                        </figcaption>
-                    </figure>
-              
-                    <!-- Portfolio item 5 -->
-                    <figure class="portfolio-item">
-                        <img class="portfolio-image" src="img/portfolio-5.jpg" alt="portfolio item">
-                        <figcaption>
-                        <h2 class="portfolio-title">Project Name</h2>
-                        <p class="portfolio-desc">A short description could go right here</p>
-                        <a href="#" class="portfolio-link">More info<img src="img/white-arrow.svg" class="white-arrow-svg" alt="white arrow"></a>
+                        <h2 class="portfolio-title">Accident Detection and Notification System</h2>
+                        <p class="portfolio-desc">A dedicated hardware system made for the accident detection. Added the Web App and an Androind App to make the project usable in real life by Emergency Assistance Provider during the accidents.</p>
+                        <a href="#" class="portfolio-link">still working on it, so no repo :(</a>
                         </figcaption>
                     </figure>
                 </div>
@@ -122,7 +131,7 @@
         </section>
     
         <!--Footer-->
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <a href="mailto:kashyapgohil476@gmail.com" class="footer__link">hello@kashyap</a>
             <ul class="social-list">
                 <li class="social-list__item">
