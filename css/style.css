@@ -160,7 +160,7 @@ header{
     max-width: 100px;
 }
 
-.logo img{
+.logo a img{
     cursor: pointer;
 }
 
