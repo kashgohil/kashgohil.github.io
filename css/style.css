@@ -160,9 +160,6 @@ header{
     max-width: 100px;
 }
 
-.logo a img{
-    cursor: pointer;
-}
 
 .nav{
     position: fixed;
@@ -458,7 +455,7 @@ header{
     -webkit-flex: 1 1 20rem;
     -ms-flex: 1 1 20rem;
     flex: 1 1 20rem;
-    height: 40vh; 
+    height: 50vh; 
 }
 .portfolio-item .portfolio-image {
     display: block;
@@ -504,6 +501,10 @@ header{
     color: var(--clr-light);
     font-size: 2.5rem;
     margin-bottom: auto; 
+}
+
+.portfolio-desc{
+    display: flex;
 }
 
 .portfolio-link {
