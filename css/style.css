@@ -140,11 +140,21 @@ h3 {
 	font-size: var(--fs-h3);
 }
 
+.section__para{
+	font-size: 18px;
+	font-weight: bold;
+}
+
 .section__subtitle--intro,
 .section__subtitle--about {
 	background: var(--clr-accent);
-	padding: 0.25em 1em;
 	font-family: var(--ff-secondary);
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	justify-content: flex-end !important;
+	text-align: right;
+	width: 100%;
 	margin-bottom: 1em;
 }
 
@@ -292,13 +302,7 @@ header {
 }
 
 @media (min-width: 900px) {
-	.intro {
-		display: grid;
-		grid-template-areas:
-			'img title'
-			'img subtitle'
-			'img body';
-	}
+	
 	.section__title--intro {
 		text-align: center;
 		grid-area: title;
@@ -449,9 +453,7 @@ header {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	width: 90%;
 	margin: 0 auto;
-	max-width: 80em;
 }
 .portfolio-item {
 	position: relative;
@@ -460,12 +462,19 @@ header {
 	-webkit-flex: 1 1 20rem;
 	-ms-flex: 1 1 20rem;
 	flex: 1 1 20rem;
-	height: 50vh;
-}
-.portfolio-item .portfolio-image {
-	display: block;
-	width: 100%;
-	height: 100%;
+	height: calc((100vh/100)*30);
+	width: calc((100vh/100)*30);
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	font-weight: bolder;
+	justify-content: center;
+	color: var(--clr-light);
+	background-color: var(--clr-accent);
+	padding: 10px;
+	box-sizing: border-box;
+	transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 .portfolio-item figcaption {
 	position: absolute;
@@ -486,14 +495,18 @@ header {
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	-webkit-transition: top ease-in-out 250ms;
-	-o-transition: top ease-in-out 250ms;
-	transition: top ease-in-out 250ms;
+	transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.portfolio-item:hover{
+	border-radius: 0%;
+	transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .portfolio-item:hover figcaption,
 .portfolio-item:focus figcaption {
 	top: 0;
-	opacity: 0.9;
+	transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 
 .white-arrow-svg {
@@ -504,18 +517,19 @@ header {
 
 .portfolio-title {
 	color: var(--clr-light);
-	font-size: 2.5rem;
+	font-size: 24px;
 	margin-bottom: auto;
 }
 
 .portfolio-desc {
 	display: flex;
+	font-size: 16px;
 }
 
 .portfolio-link {
 	color: var(--clr-light);
 	font-weight: 900;
-	font-size: 1.1rem;
+	font-size: 16px;
 	text-decoration: none;
 	border-bottom: 3px solid var(--clr-light);
 	-webkit-align-self: flex-start;
