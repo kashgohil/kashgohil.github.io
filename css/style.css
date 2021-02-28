@@ -299,6 +299,11 @@ header {
 	.intro__body {
 		margin: 2em auto 0;
 	}
+	.portfolio-item{
+		height: 50vh !important;
+		width: 100vw !important;
+		margin: 10px 0px !important;
+	}
 }
 
 @media (min-width: 900px) {
@@ -462,8 +467,8 @@ header {
 	-webkit-flex: 1 1 20rem;
 	-ms-flex: 1 1 20rem;
 	flex: 1 1 20rem;
-	height: calc((100vh/100)*30);
-	width: calc((100vh/100)*30);
+	height: 50vh;
+	width: 50vh;
 	font-size: 24px;
 	display: flex;
 	align-items: center;
